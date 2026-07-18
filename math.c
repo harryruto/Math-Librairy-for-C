@@ -46,7 +46,7 @@ double squareRoot(double number) {
     while (obtainedNumber != number) {
         testedNumber++;
         obtainedNumber = square(testedNumber);
-    if (obtainedNumber > +number) {
+    if (obtainedNumber > number) {
         return -1;
     }
 }
