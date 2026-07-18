@@ -1,40 +1,55 @@
 #include "math.h"
 
-double addition(double nombre1, double nombre2) {
-    return nombre1 + nombre2;
+double addition(double number1, double number2) {
+    return number1 + number2;
 }
 
-double soustraction(double nombre1, double nombre2) {
-    return nombre1 - nombre2;
+double subtraction(double number1, double number2) {
+    return number1 - number2;
 }
 
-double multiplication(double nombre1, double nombre2) {
-    return nombre1 * nombre2;
+double multiplication(double number1, double number2) {
+    return number1 * number2;
 }
 
-double division(double nombre1, double nombre2) {
-    return nombre1 / nombre2;
+double division(double number1, double number2) {
+    return number1 / number2;
 }
 
-double carre(double nombre1) {
-    return nombre1 * nombre1;
+double square(double number1) {
+    return number1 * number1;
 }
 
-double puissance(double nombre1, double puissance) {
-  double nombreDeDepart = nombre1;
-  double puissanceActuelle = 0;
+double power(double number1, double exponent) {
+    double startingNumber = number1;
+    double currentPower = 0;
 
-  while(puissanceActuelle != puissance - 1) {
-    puissanceActuelle++;
-    nombre1 = nombre1 * nombreDeDepart;
-}
-   return nombre1;
-}
-
-double aireCR(double longueur, double largeur) {
- return longueur * largeur;
+    while (currentPower != exponent - 1) {
+        currentPower++;
+        number1 = number1 * startingNumber;
+    }
+    return number1;
 }
 
-double aireT(double longueur, double largeur) {
- return longueur * largeur / 2;
+double areaSR(double length, double width) {
+    return length * width;
+}
+
+double areaT(double length, double width) {
+    return length * width / 2;
+}
+
+double squareRoot(double number) {
+    double testedNumber = 1;
+    double obtainedNumber = 0;
+
+    while (obtainedNumber != number) {
+        testedNumber++;
+        obtainedNumber = square(testedNumber);
+    if (obtainedNumber > +number) {
+        return -1;
+    }
+}
+
+    return testedNumber;
 }
