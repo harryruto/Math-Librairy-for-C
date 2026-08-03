@@ -10,6 +10,7 @@ double mthp(double number1, double exponent);
 double mtharSR(double length, double width);
 double mtharT(double length, double width);
 double mthsqr(double number);
+double mthppct(double number, double type, double modification);
 
 #endif // MATH_H_INCLUDED
 
