@@ -1,26 +1,26 @@
 #include "math.h"
 
-double addition(double number1, double number2) {
+double mthadd(double number1, double number2) {
     return number1 + number2;
 }
 
-double subtraction(double number1, double number2) {
+double mthsub(double number1, double number2) {
     return number1 - number2;
 }
 
-double multiplication(double number1, double number2) {
+double mthmult(double number1, double number2) {
     return number1 * number2;
 }
 
-double division(double number1, double number2) {
+double mthdivd(double number1, double number2) {
     return number1 / number2;
 }
 
-double square(double number1) {
+double mthsq(double number1) {
     return number1 * number1;
 }
 
-double power(double number1, double exponent) {
+double mthp(double number1, double exponent) {
     double startingNumber = number1;
     double currentPower = 0;
 
@@ -31,38 +31,35 @@ double power(double number1, double exponent) {
     return number1;
 }
 
-double areaSR(double length, double width) {
+double mtharSR(double length, double width) {
     return length * width;
 }
 
-double areaT(double length, double width) {
-    return length * width / 2;
+double mtharT(double length, double width) {
+    return length * width / 2.0;
 }
 
-double squareRoot(double number) {
-    if(number <  0)
-    {
+double mthsqr(double number) {
+    if (number < 0) {
         return -1;
     }
-    if(number == 0) {
+    if (number == 0) {
         return 0;
     }
-        double x = number;
+
+    double x = number;
     double tolerance = 0.00001;
 
-    while(1) {
+    while (1) {
         double nextX = 0.5 * (x + number / x);
-
         double diff = nextX - x;
 
-        if(diff < 0) {
+        if (diff < 0) {
             diff = -diff;
-            }
-        if(diff < tolerance) {
-        return nextX;
+        }
+        if (diff < tolerance) {
+            return nextX;
         }
         x = nextX;
     }
 }
-
-
