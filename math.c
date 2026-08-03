@@ -63,3 +63,13 @@ double mthsqr(double number) {
         x = nextX;
     }
 }
+
+double mthppct(double number, double type, double modification) {
+    if (type == 1) {
+        number = number * (1 + modification / 100);
+        return number;
+    }
+    if (type = 2) {
+        number = number * (1 - modification / 100);
+    }
+}
