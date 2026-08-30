@@ -1,4 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "math.h"
+#include <windows.h>
 
 double mthadd(double number1, double number2) {
     return number1 + number2;
@@ -72,4 +75,8 @@ double mthppct(double number, double type, double modification) {
     if (type = 2) {
         number = number * (1 - modification / 100);
     }
+}
+void color(int couleurDuTexte, int couleurDuFond) {
+HANDLE H = GetStdHandle(STD_OUTPUT_HANDLE);
+SetConsoleTextAttribute(H, couleurDuFond*16+couleurDuTexte);
 }
