@@ -11,6 +11,7 @@ double mtharSR(double length, double width);
 double mtharT(double length, double width);
 double mthsqr(double number);
 double mthppct(double number, double type, double modification);
+void color(int couleurDuTexte, int couleurDuFond);
 
 #endif // MATH_H_INCLUDED
 
