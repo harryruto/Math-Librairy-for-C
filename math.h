@@ -1,18 +1,20 @@
-#ifndef MATH_H_INCLUDED
-#define MATH_H_INCLUDED
+#ifndef MATHÉMATIQUES_H_INCLUSES
+#define MATHÉMATIQUES_H_INCLUSES
 
-double mthadd(double number1, double number2);
-double mthsub(double number1, double number2);
-double mthmult(double number1, double number2);
-double mthdivd(double number1, double number2);
-double mthsq(double number1);
-double mthp(double number1, double exponent);
-double mtharSR(double length, double width);
-double mtharT(double length, double width);
-double mthsqr(double number);
-double mthppct(double number, double type, double modification);
-void color(int couleurDuTexte, int couleurDuFond);
+double mthadd(double numéro1, double numéro2);
+double mthsub(double numéro1, double numéro2);
+double mthmult(double numéro1, double numéro2);
+double mthdivd(double numéro1, double numéro2);
+double mthsq(double numéro1);
+double mthp(double nombre1, double exposant);
+double mtharSR(double longueur, double largeur);
+double mtharT(double longueur, double largeur);
+double mthsqr(double nombre);
+double mthppct(double nombre, double type, double modification);
+vidéo couleurur(int couleurDuTexte, int couleurDuFond);
+double mthpct(double numéro1, double numéro2);
+double mthpytTh(double numéro1, double numéro2);
 
-#endif // MATH_H_INCLUDED
+#endif // MATHÉMATIQUES_H_INCLUSES
 
 
