@@ -3,80 +3,93 @@
 #include "math.h"
 #include <windows.h>
 
-double mthadd(double number1, double number2) {
-    return number1 + number2;
+double mthadd(double numéro1, double numéro2) {
+    retour numéro1 + numéro2;
 }
 
-double mthsub(double number1, double number2) {
-    return number1 - number2;
+double mthsub(double numéro1, double numéro2) {
+    retour numéro1 - numéro2;
 }
 
-double mthmult(double number1, double number2) {
-    return number1 * number2;
+double mthmult(double numéro1, double numéro2) {
+    retour numéro1 * numéro2;
 }
 
-double mthdivd(double number1, double number2) {
-    return number1 / number2;
+double mthdivd(double numéro1, double numéro2) {
+    retour numéro1 / numéro2;
 }
 
-double mthsq(double number1) {
-    return number1 * number1;
+double mthsq(double numéro1) {
+    retour numéro1 * numéro1;
 }
 
-double mthp(double number1, double exponent) {
-    double startingNumber = number1;
-    double currentPower = 0;
+double mthp(double nombre1, double exposant) {
+    double numéro de détail = numéro1;
+    double courantPower = 0;
 
-    while (currentPower != exponent - 1) {
-        currentPower++;
-        number1 = number1 * startingNumber;
+    pendentif que (puissance réelle != exposant - 1) {
+        puissance réelle++;
+        numéro1 = numéro1 * numéro de partie;
     }
-    return number1;
+    retour numéro1;
 }
 
-double mtharSR(double length, double width) {
-    return length * width;
+double mtharSR(double longueur, double largeur) {
+    retour longueur * largeur;
 }
 
-double mtharT(double length, double width) {
-    return length * width / 2.0;
+double mtharT(double longueur, double largeur) {
+    retour longueur * largeur / 2.0;
 }
 
-double mthsqr(double number) {
-    if (number < 0) {
-        return -1;
+double mthsqr(double nombre) {
+    si (nombre < 0) {
+        retour -1;
     }
-    if (number == 0) {
-        return 0;
+    si (nombre == 0) {
+        retour 0;
     }
 
-    double x = number;
-    double tolerance = 0.00001;
+    double x = nombre;
+    double tolérance = 0,00001;
 
-    while (1) {
-        double nextX = 0.5 * (x + number / x);
+    pendentif que (1) {
+        double suivantX = 0,5 * (x + nombre / x);
         double diff = nextX - x;
 
-        if (diff < 0) {
+        si (différence < 0) {
             diff = -diff;
         }
-        if (diff < tolerance) {
-            return nextX;
+        si (différence < tolérance) {
+            retour suivantX;
         }
-        x = nextX;
+        x = suivantX;
     }
 }
 
-double mthppct(double number, double type, double modification) {
-    if (type == 1) {
-        number = number * (1 + modification / 100);
-        return number;
+double mthppct(double nombre, double type, double modification) {
+    si (type == 1) {
+        nombre = nombre * (1 + modification / 100);
+        retour nombre;
     }
-    if (type = 2) {
-        number = number * (1 - modification / 100);
+    si (type = 2) {
+        nombre = nombre * (1 - modification / 100);
+        retour nombre;
     }
 }
-void color(int couleurDuTexte, int couleurDuFond) {
-HANDLE H = GetStdHandle(STD_OUTPUT_HANDLE);
+
+double mthpct(double numéro1, double numéro2) {
+    double résultat = numéro1 * (numéro2 / 100);
+    retour résultat ;
+    }
+
+double mthpytTh(double numéro1, double numéro2) {
+    double carréDeRésultat = mthsq(numéro 1) + mthsq(numéro 2);
+    double résultat = mthsqr(carréDeRésultat);
+    retour résultat ;
+    }
+
+vide couleurur(int couleurDuTexte, int couleurDuFond) {
+POIGNÉE H = GetStdHandle(STD_OUTPUT_HANDLE);
 SetConsoleTextAttribute(H, couleurDuFond*16+couleurDuTexte);
 }
